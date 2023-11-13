@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luigi Santiago</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+
+    <!-- HEADER NAVIGATION -->
+    <nav id="header-nav">
+        <div class="logo"> Luigi Santiago</div>   
+        <div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+            </ul>
+        </div> 
+    </nav>
+
+    <!-- HAMBURGER NAV -->
+    <nav id="hamburger-nav">
+        <div class="logo"> Luigi Santiago</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+            <div class="menu-links">
+                <li><a href="#home" toggleMenu()>Home</a></li>
+                <li><a href="#about" toggleMenu()>About</a></li>
+                <li><a href="#skills" toggleMenu()>Skills</a></li>
+                <li><a href="#projects" toggleMenu()>Projects</a></li>
+                <li><a href="#contacts" toggleMenu()>Contacts</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTIONS HOME-->
+    <section id="home">
+            <div class="home-container">
+
+
+
+                <div class="section__pic-container">
+                    <img id="profile__pic" src="./assets/Luigi-profilepicic.png" alt="Luigi Profile Pic"/>
+                    </div>
+
+                    <div class="section__text">
+
+                        <p class="section__text_p1">Hello, I'm</p>
+                        <h1 class="title">Luigi Santiago</h1>
+                        <p class="section__text_p2">Aspiring Web Developer and Designer <br> from the Philippines.</p>
+                        
+                                <div class="btn-container">
+                                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                                Resume
+                                </button>
+
+                                <button class="btn btn-color-1" 
+                                onclick="location.href='./#contacts'">
+                                Contact
+                                </button>
+                                </div>
+
+                                        <div id="socials-container" >
+
+                                            <a href="https://www.linkedin.com/in/luigi-santiago-497b97265/" target="_blank">
+                                                <img src="./Assets/linkedin.png" alt="LinkedIn Profile" class="icon"/>
+                                            </a>
+
+                                            <a href="https://github.com/Wigibles" target="_blank">
+                                                <img src="./Assets/github.png" alt="Gitgub Profile" class="icon"/>
+
+                                            </a>
+
+                                        </div>
+
+                    </div>  
+            </div>
+    </section>
+
+<!-- SECTIONS ABOUT -->
+    <section id="about">
+        <p class="section__text__p1">Informations</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+
+            <div class="about-details-container">
+
+                <div class="about-containers">
+
+                    <div class="details-container">
+                        <img class="icon" src="./Assets/education.png" alt="Education Icon">
+                        <h3>Education</h3>
+                        <p>B.S. Information Technology<br>Bulacan State University</p>
+                    </div>
+
+                    <div class="details-container">
+                        <img class="icon" src="./Assets/experience.png" alt="achievement icon">
+                        <h3>Achievement</h3>
+                        <p>Honor Student <br>Pogi</p>
+                    </div>
+                </div>
+
+                <div class="text-container">
+                    <p>Hello! I'm Luigi C. Santiago, a third-year student at Bulacan State University.
+                     Pursuing a B.S. in Information Technology. <br>My focus is on web development and design, 
+                     and I'm dedicated to mastering the skills needed to create innovative and user-friendly websites</p>
+                </div>
+            </div>
+            <div class="section__pic-container">
+                <img class="about-pic" src="./Assets/about-luigi.png" alt="About Photo">
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Skills</h1>
+            <div class="section-container_skill">
+                <div class="skill_flex">
+                   
+                    <div class="skills-bar-container">
+                    
+                        <p class="skill_text">HTML</p>
+                            <div class="skill_container">
+                            <div class="skills htmlbar">70%</div>
+                            </div>
+
+                        <p class="skill_text">UI/UX</p>
+                            <div class="skill_container">
+                            <div class="skills ui">75%</div>
+                            </div>
+
+                        <p class="skill_text">Java</p>
+                            <div class="skill_container">
+                            <div class="skills java">85%</div>
+                            </div>
+
+                        <p class="skill_text">SQL</p>
+                            <div class="skill_container">
+                            <div class="skills sql">80%</div>
+                            </div>
+                    </div>
+
+                </div>     
+                        <div class="text-container">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
+                                Quibusdam eos error doloremque at fuga sed expedita vitae corporis 
+                                <br>aperiam, perspiciatis, fugiat distinctio nulla minima veritatis <br>
+                                dolorem quas cupiditate odio velit.</p>
+                        </div>
+                    
+            </div>
+
+            <!-- <div class="divider">
+            </div> -->
+
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+
+            <div class="about-containers">
+
+                <div class="details-container color-container">
+                    <div article-container>
+                        <img class="project-img" src="./Assets/readwell-project.png" alt="Project 1">
+                    </div>
+                    <h2 class="experience-sub-title project-title">ReadWell App</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/proto/qQcK9vQRYLAEH6TZbNIEmG/Platform-Technologies-PBL-Mobile-Application-Prototype?type=design&node-id=709-9428&t=Hfqypdssp31OxdgI-1&scaling=scale-down&page-id=5%3A3&starting-point-node-id=709%3A9684&mode=design'">
+                            Figma
+                        </button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <div article-container>
+                        <img class="project-img" src="./Assets/project-2.png" alt="Project 2">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Two</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.c'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="details-container color-container">
+                    <div article-container>
+                        <img class="project-img" src="./Assets/project-3.png" alt="Project 3">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Project Three</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.c'">
+                            Github
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="contacts">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact</h1>
+
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img class="icon contact-icon email-icon" src="./Assets/email.png" alt="Email"/>
+                <p><a href="mailto:exampleemail.com" target="_blank">luigisantiago@gmail.com</a></p>
+            </div>
+
+            <div class="contact-info-container">
+                <img class="icon contact-icon" src="./Assets/linkedin.png" alt="linkedin icon"/>
+                <p><a href="https://www.linkedin.com/in/luigi-santiago-497b97265/" target="_blank">LinkedIn</a></p>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer>
+        <div class="section__text__p1">Luigi C. Santiago</div>
+        <p>&#169 All Rights Reserved. 2023</p>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
