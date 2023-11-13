@@ -72,9 +72,10 @@ nav {
 }
 
 .nav-links {
-    gap: 2rem;
+    margin-left: 200px;
+    gap: 3rem;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
 
 a {
@@ -344,8 +345,8 @@ section{
 
 .about-pic{
     margin-top: 1.50rem;
-    height: 450px;
-    width: 450px;
+    height: 400px;
+    width: 400px;
     border-radius: 1.2rem;
     box-shadow: rgba(0, 0, 0, 3) 1.95px 1.95px 2.5px;
 }
@@ -361,7 +362,7 @@ section{
 }
 
 .section-container{
-    gap: 15rem;
+    gap: 5rem;
     height: 80%;
 }
 
