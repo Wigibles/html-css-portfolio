@@ -372,6 +372,9 @@ section{
     margin: auto, 0;
 }
 
+.text-container{
+    text-justify: distribute;
+}
 
 /* Skills Container */
 
