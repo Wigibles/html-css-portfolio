@@ -326,6 +326,9 @@ section{
 #about{
     position: relative;
     padding: 85px 120px;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .about-containers {
