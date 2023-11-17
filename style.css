@@ -12,9 +12,9 @@
 
 /* GENERAL */
 
-
+/* FONT */
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
 * {
     margin: 0;
@@ -24,7 +24,7 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-
+    background-color: #d9d9d9;
 }
 
 html {
@@ -93,54 +93,13 @@ a:hover {
 }
 
 .logo {
-    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 2.5rem;
 }
 
 .logo:hover{
     cursor: default;
-}
-
-/* HAMBURGER MENU */
-
-#hamburger-nav{
-    top: 0;
-    position: fixed;
-    justify-content: space-around;
-    align-items: center;
-    display: none;
-
-}
-
-.hamburger-menu{
-    position: relative;
-    display:inline-block;
-}
-
-.hamburger-icon{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-    cursor: pointer;
-}
-
-.hamburger-icon span {
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    transition: all 0.3 ease-in-out;
-}
-
-.menu-links {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: white;
-    width:fit-content;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3 ease-in-out;
 }
 
 .menu-links a {
@@ -161,28 +120,6 @@ a:hover {
 .menu-links.open {
     max-height: 300px;
 
-}
-
-.hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px, 5px);
-}
-.hamburger-icon.open span:nth-child(2) {
-    opacity: 0;
-}
-.hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
-}
-
-.hamburger-icon span:first-child {
-    transform: none;
-}
-
-.hamburger-icon span:first-child {
-opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-    transform: none;
 }
 
 /* Sections */
@@ -211,7 +148,7 @@ section{
 .home-container{
     display: flex;
     justify-content: center;
-    gap: 13rem;
+    gap: 20rem;
     width: 100%;
     margin-top: 60px;
     animation: fadeInAnimation ease 3s;
@@ -221,6 +158,8 @@ section{
 }
 
 #profile__pic{
+    position: relative;
+    left: 125px;
     animation: fadeInAnimation ease-in-out 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
@@ -245,9 +184,10 @@ section{
 
 .section__text p {
     font-weight: 600;
-    font-size: 2rem;
-
+    font-size: 3rem;
+    text-align: start;
 }
+
 
 .section__text__p1 {
     text-align: center;
@@ -258,7 +198,12 @@ section{
     margin-bottom: 1rem;
 }
 
+.title_home {
+    font-size: 3rem;
+    text-align: start;
+}
 .title {
+    text-align: justify;
     font-size: 3rem;
     text-align: center;
 }
@@ -266,7 +211,6 @@ section{
 #socials-container {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
     gap: 1rem;
 }
 
@@ -285,6 +229,15 @@ section{
     justify-content: center;
     gap: 1rem;
     margin-top: 1rem;
+    align-items: center;
+}
+
+.homepage-btn-container{
+    display: flex;
+    padding-top: 10px;
+    justify-content: start;
+    gap: 1rem;
+    align-items: center;
 }
 
 .btn {
@@ -331,6 +284,17 @@ section{
     animation-fill-mode: forwards;
 }
 
+.title_about {
+    padding: 5px 15px;
+    width: 48px;
+    margin-top: 1.5rem;
+    margin-left: 28rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+}
+
 .about-containers {
     gap: 2rem;
     margin-bottom: 2rem;
@@ -364,6 +328,23 @@ section{
     text-align: center;
 }
 
+.details-container_messbg{
+    padding: 1.5rem;
+    flex: 0;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(53,53,53) solid;
+    border-color: rgb(163,163,163);
+    text-align: justify;
+}
+
+.details-container_title{
+    padding: 1.5rem;
+    position: relative;
+    background: white;
+    text-align: justify;
+}
+
 .section-container{
     gap: 5rem;
     height: 80%;
@@ -384,7 +365,9 @@ section{
 #skills{
     position: relative;
     padding: 80px 120px;
+    background-color: azure;
 }
+
 
 .section-container_skill{
     display: flex;
@@ -393,6 +376,7 @@ section{
 }
 
 .skill_flex{
+    background-color: white;
     display: flex;
     width: 100%;
 }
@@ -410,15 +394,16 @@ section{
 .skill_container {
     padding: 5px;
     border-radius: 50px;
-    width: 100%; /* Full width */
-    background-color: #ddd; /* Grey background */
-  }
+    width: 100%; 
+    background-color: rgb(158, 158, 158);
+ }
   
   .skills {
-    text-align: right; /* Right-align text */
-    padding-top: 10px; /* Add top padding */
-    padding-bottom: 10px; /* Add bottom padding */
-    color: white; /* White text color */
+    text-align: right; 
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    padding-right: 10px;
+    color: rgb(255, 255, 255);
   }
   
   .htmlbar {
@@ -504,11 +489,68 @@ section{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 90vh;
+    height: 100vh;
+}
+
+.contact-section{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px
+}
+
+.contact-form{
+    max-width: 700px;
+    margin-right: 20px;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+}
+
+.contact-form .text-box {
+    background-color: white;
+    color:rgb(63, 63, 63);
+    border: none;
+    height: 20px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+
+}
+
+.contact-form .text-box:first-child {
+    margin-right: 15px;
+
+}
+
+.contact-form textarea{
+    background: white;
+    color: black;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 15px;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.title_contact {
+    text-align: justify;
+    font-size: 3rem;
+    text-align: center;
+    padding-left: 30rem;
 }
 
 .contact-info-upper-container {
-    display: flex;
+    display:list-item;
     justify-content: center;
     border-radius: 2rem;
     border: rgb(53,53,53) 0.1rem solid;
@@ -519,13 +561,18 @@ section{
 }
 
 .contact-info-container {
+    padding: 5px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     gap: 5px;
     margin: 1rem;
 }
 
+.mobile-number{
+    margin-top: 7px;
+    font-size: larger;
+}
 .contact-info-container p{
     font-size: larger;
 }
@@ -543,16 +590,16 @@ footer{
     width: 100%;
     text-align: center;
     padding-top: 30px;
-    background: rgb(53,53,53);
+    background: white;
 }
 
 footer .section__text__p1{
     font-size: 2rem;
-    color: white;
+    color: black;
     padding-bottom: 50px;
 }
 
 footer p{
-    color: white;
+    color: black;
     padding-bottom: 30px;
 }

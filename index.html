@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Portfolio-Luigi Santiago</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+    
 </head>
 <body>
 
     <!-- HEADER NAVIGATION -->
     <nav id="header-nav">
-        <div class="logo">Luigi Santiago</div>   
+        <div class="logo">LCS</div>   
         <div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
@@ -21,25 +21,6 @@
                 <li><a href="#contacts">Contacts</a></li>
             </ul>
         </div> 
-    </nav>
-
-    <!-- HAMBURGER NAV -->
-    <nav id="hamburger-nav">
-        <div class="logo"> Luigi Santiago</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-            <div class="menu-links">
-                <li><a href="#home" toggleMenu()>Home</a></li>
-                <li><a href="#about" toggleMenu()>About</a></li>
-                <li><a href="#skills" toggleMenu()>Skills</a></li>
-                <li><a href="#projects" toggleMenu()>Projects</a></li>
-                <li><a href="#contacts" toggleMenu()>Contacts</a></li>
-            </div>
-        </div>
     </nav>
 
     <!-- SECTIONS HOME-->
@@ -53,32 +34,31 @@
                     <div class="section__text">
 
                         <p class="section__text_p1">Hello, I'm</p>
-                        <h1 class="title">Luigi Santiago</h1>
-                        <p class="section__text_p2">Aspiring Web Developer and Designer <br> from the Philippines.</p>
+                        <h1 class="title_home">Luigi C. Santiago</h1>
+                        <p class="section__text_p2">Aspiring Web Developer and Designer from the Philippines.</p>
                         
-                                <div class="btn-container">
-                                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-                                Resume
-                                </button>
+                                <div class="homepage-btn-container">
 
-                                <button class="btn btn-color-1" 
-                                onclick="location.href='./#contacts'">
-                                Contact
-                                </button>
+                                    <button class="btn btn-color-1" 
+                                    onclick="location.href='./#contacts'">
+                                    CONTACT
+                                    </button>
+
+                                    <div id="socials-container" >
+
+                                        <a href="https://www.linkedin.com/in/luigi-santiago-497b97265/" target="_blank">
+                                            <img src="./Assets/linkedin.png" alt="LinkedIn Profile" class="icon"/>
+                                        </a>
+
+                                        <a href="https://github.com/Wigibles" target="_blank">
+                                            <img src="./Assets/github.png" alt="Gitgub Profile" class="icon"/>
+
+                                        </a>
+
+                                    </div>
+
                                 </div>
-
-                                        <div id="socials-container" >
-
-                                            <a href="https://www.linkedin.com/in/luigi-santiago-497b97265/" target="_blank">
-                                                <img src="./Assets/linkedin.png" alt="LinkedIn Profile" class="icon"/>
-                                            </a>
-
-                                            <a href="https://github.com/Wigibles" target="_blank">
-                                                <img src="./Assets/github.png" alt="Gitgub Profile" class="icon"/>
-
-                                            </a>
-
-                                        </div>
+                                        
 
                     </div>  
             </div>
@@ -86,8 +66,7 @@
 
 <!-- SECTIONS ABOUT -->
     <section id="about">
-        <p class="section__text__p1">Informations</p>
-        <h1 class="title">About Me</h1>
+        <h1 class="title_about">About</h1>
 
         <div class="section-container">
 
@@ -108,7 +87,8 @@
                     </div>
                 </div>
 
-                <div class="text-container">
+
+                <div class="details-container_messbg text-container">
                     <p>Hello! I'm Luigi C. Santiago, a third-year student at Bulacan State University.
                      Pursuing a B.S. in Information Technology. My focus is on web development and design, 
                      and I'm dedicated to mastering the skills needed to create innovative and user-friendly websites</p>
@@ -120,8 +100,8 @@
         </div>
     </section>
 
+<!-- SECTIONS SKILLS -->
     <section id="skills">
-        <p class="section__text__p1">My</p>
         <h1 class="title">Skills</h1>
             <div class="section-container_skill">
                 <div class="skill_flex">
@@ -164,8 +144,8 @@
 
     </section>
 
+<!-- SECTIONS PROJECTS -->
     <section id="projects">
-        <p class="section__text__p1">My</p>
         <h1 class="title">Projects</h1>
         <div class="experience-details-container">
 
@@ -214,12 +194,14 @@
     </section>
 
     <section id="contacts">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact</h1>
+        <h1 class="title_contact">Contacts</h1>
 
-        <div class="contact-info-upper-container">
+     <div class="contact-section">      
+
+         <div class="contact-info-upper-container">
+            
             <div class="contact-info-container">
-                <img class="icon contact-icon email-icon" src="./Assets/email.png" alt="Email"/>
+                <img class="icon contact-icon email-icon" src="./Assets/email.png" alt="Email icon"/>
                 <p><a href="mailto:exampleemail.com" target="_blank">luigisantiago@gmail.com</a></p>
             </div>
 
@@ -227,8 +209,24 @@
                 <img class="icon contact-icon" src="./Assets/linkedin.png" alt="linkedin icon"/>
                 <p><a href="https://www.linkedin.com/in/luigi-santiago-497b97265/" target="_blank">LinkedIn</a></p>
             </div>
-            
+
+           <div class="contact-info-container">
+                <img class="icon contact-icon" src="./Assets/phone.png" alt="Phone icon"/>
+                <p><a href="https://www.linkedin.com/in/luigi-santiago-497b97265/" target="_blank">+63 9245357884</a></p>
+            </div>
+
         </div>
+
+
+             <div class="contact-form">
+                  <form class="contact" action="">
+                      <input type="text" name="name" class="text-box" placeholder="Name" />
+                      <input type="email" name="email" class="text-box" placeholder="Email" />
+                      <textarea name="message" rows="5" placeholder="Compose a message here" ></textarea>
+                      <input class="send-btn btn btn-color-2" type="submit" value="Send" id="contact">
+                  </form>
+              </div>
+         </div>
     </section>
 
     <footer>
